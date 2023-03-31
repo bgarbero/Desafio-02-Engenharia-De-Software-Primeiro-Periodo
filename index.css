@@ -3,7 +3,7 @@
     --fontColor: #ffffff;
     --backGroundCanvas: #00AD6D;
     --colorFontButton: #222738;
-    --hoverButton: #B0E0E6;
+    --hoverButton: #00FF00;
 }
 
 /* :root {
@@ -13,12 +13,6 @@
     --hoverButton: #4cffd7;
     --backGroundGame: #1a1a1a;
    } */
-
-/* Aqui estamos importando a fonte do nosso jogo */
-@font-face {
-    font-family: "game";
-    src: url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800&display=swap');
-}
 
 /* Aqui vamos resetar o CSS nativo do navegador */
 * {
@@ -34,19 +28,19 @@ button:focus {
 html,
 body {
     height: 100%;
-    font-family: "Poppins", sans-serif;
+    font-family: "Unispace";
     color: var(--fontColor);
-    background-image: url(rm251-aum-06-g.jpg)
+    background-image: url(neon.jpg)
         /*var(--backGroundGame)*/
     ;
-    background-size: contain;
+    background-size: 100%;
     background-repeat: no-repeat;
     background-position: center;
     background-clip: padding-box;
 }
 
 canvas {
-    background-color: #DDA0DD;
+    background-color: #000000;
 }
 
 .container {
@@ -66,6 +60,7 @@ canvas {
 
 h2 {
     font-weight: 200;
+    color: #FF00FF;
 }
 
 #score {
@@ -73,7 +68,7 @@ h2 {
     font-weight: 600;
     margin-left: 10px;
     margin-top: 0;
-    color: #ffffff;
+    color: #FF00FF;
 }
 
 .noselect {
@@ -81,7 +76,7 @@ h2 {
 }
 
 #replay {
-    font-size: 10px;
+    font-size: 12px;
     padding: 10px 20px;
     background-color: var(--fontColor);
     border: none;
@@ -123,12 +118,10 @@ h2 {
 
 #author h1 {
     font-size: 25px;
-    color: #2E8B57;
+    color: #00FFFF;
 }
 
-#audio {
-    align-items: center;
-}
+
 
 /* Alterando a parte central do jogo, botão e canvas */
 .wrapper {

@@ -59,7 +59,7 @@ let helpers = {
   },
   drawGrid() {
     CTX.lineWidth = 1.1;
-    CTX.strokeStyle = "#232332";
+    CTX.strokeStyle = "#DC143C";
     CTX.shadowBlur = 0;
     for (let i = 1; i < cells; i++) {
       let f = (W / cells) * i;
@@ -367,7 +367,7 @@ function gameOver() {
   maxScore ? null : (maxScore = score);
   score > maxScore ? (maxScore = score) : null;
   window.localStorage.setItem("maxScore", maxScore);
-  CTX.fillStyle = "#708090";
+  CTX.fillStyle = "#DC143C";
   CTX.textAlign = "center";
   CTX.font = "bold 30px Poppins, sans-serif";
   CTX.fillText("GAME OVER", W / 2, H / 2);
