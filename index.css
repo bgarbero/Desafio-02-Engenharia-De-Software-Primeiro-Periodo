@@ -1,9 +1,9 @@
 /* Criando variáveis para o sistema */
 :root {
- --fontColor: #6e7888;
- --backGroundCanvas: #00AD6D;
- --colorFontButton: #222738;
- --hoverButton: #4cffd7;
+    --fontColor: #ffffff;
+    --backGroundCanvas: #00AD6D;
+    --colorFontButton: #222738;
+    --hoverButton: #B0E0E6;
 }
 
 /* :root {
@@ -31,15 +31,22 @@ button:focus {
     outline: 0;
 }
 
-html, body{
+html,
+body {
     height: 100%;
     font-family: "Poppins", sans-serif;
     color: var(--fontColor);
-    background-color: var(--backGroundGame);
+    background-image: url(rm251-aum-06-g.jpg)
+        /*var(--backGroundGame)*/
+    ;
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-clip: padding-box;
 }
 
 canvas {
-    background-color: var(--backGroundCanvas);
+    background-color: #DDA0DD;
 }
 
 .container {
@@ -56,21 +63,24 @@ canvas {
     align-items: center;
     font-size: 25px;
 }
+
 h2 {
     font-weight: 200;
 }
-#score{
+
+#score {
     font-size: 50px;
     font-weight: 600;
     margin-left: 10px;
     margin-top: 0;
+    color: #ffffff;
 }
 
-.noselect{
+.noselect {
     user-select: none;
 }
 
-#replay{
+#replay {
     font-size: 10px;
     padding: 10px 20px;
     background-color: var(--fontColor);
@@ -82,10 +92,12 @@ h2 {
     cursor: pointer;
     transition: all 200ms cubic-bezier(0.4, 0, 0.2, 1);
 }
-#replay:hover{
+
+#replay:hover {
     background: var(--hoverButton);
     transition: all 200ms cubic-bezier(0.4, 0, 0.2, 1);
 }
+
 #replay svg {
     margin-right: 10px;
 }
@@ -111,6 +123,11 @@ h2 {
 
 #author h1 {
     font-size: 25px;
+    color: #2E8B57;
+}
+
+#audio {
+    align-items: center;
 }
 
 /* Alterando a parte central do jogo, botão e canvas */

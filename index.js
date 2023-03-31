@@ -367,7 +367,7 @@ function gameOver() {
   maxScore ? null : (maxScore = score);
   score > maxScore ? (maxScore = score) : null;
   window.localStorage.setItem("maxScore", maxScore);
-  CTX.fillStyle = "#4cffd7";
+  CTX.fillStyle = "#708090";
   CTX.textAlign = "center";
   CTX.font = "bold 30px Poppins, sans-serif";
   CTX.fillText("GAME OVER", W / 2, H / 2);
