@@ -14,21 +14,28 @@
     <div class="container noselect">
 
         <div id="ui">
-            <h2>PONTOS:</h2>
+            <h2>SCORE:</h2>
             <span id="score">00</span>
         </div>
-
+        <audio src="01 Title.mp3"></audio>
         <div class="wrapper">
-            <button id="replay">RECOMEÇAR</button>
+            <button id="replay">START</button>
+            <script>
+                const button = document.querySelector('button')
+                button.addEventListener('click', function () {
+                    const audio = document.querySelector('audio')
+                    audio.play()
+                })
+            </script>
             <div id="canvas"></div>
         </div>
         <div id="author">
             <h1>NEON SNAKE</h1> <span>BY BRUNO GARBERO</span>
         </div>
-            <audio controls="controls" autoplay="autoplay" loop="loop" src="01 Title.mp3" preload="auto"></audio>
     </div>
 
     <script src="./index.js"></script>
+    <script src="audio.js"></script>
 </body>
 
 </html>
